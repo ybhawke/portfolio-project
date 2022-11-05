@@ -8,6 +8,8 @@ body {
     min-height: 91.75vh;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    
 }
 
 #nav-bar {
@@ -50,6 +52,12 @@ main {
     position: relative;
     top: 5rem;
     max-width: 100%;
+}
+
+#contact-main {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
 }
 
 main h2 {
@@ -234,6 +242,42 @@ footer p {
     margin-right: 2.5rem;
 }
 
+/* Contact Page */
+
+.contact-cards-container {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.contact-card {
+    border: 1px black solid;
+    width: 12rem;
+    height: 10rem;
+    background-color: lightblue;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem;
+    flex-direction: column;
+    z-index:100;
+}
+
+.contact-info {
+    display: none;
+}
+
+#email-info {
+    inline-size: 140px;
+    overflow-wrap: break-word;
+}
+
+/* END Contact Page */
 @media only screen and (max-width: 800px) {
     #under-construction {
         font-size: 2rem;

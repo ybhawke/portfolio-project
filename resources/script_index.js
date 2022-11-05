@@ -6,7 +6,8 @@ let noahTitle = document.getElementById('noah-title');
 let nBackGround = document.getElementById('personal-info');
 let yesButt = document.getElementById('yes');
 let noButt = document.getElementById('no');
-let noahImage = document.getElementById('noah-image')
+let noahImage = document.getElementById('noah-image');
+;
 
 let fSize = window.getComputedStyle(noahDesc, null).getPropertyValue('font-size');
 // let fSize = parseFloat(fonty)
@@ -60,6 +61,9 @@ function imageChange () {
 function imageChange2 () {
     noahImage.src = "./resources/images/noah-1.jpg";
 }
+
+
+
 
 noButton.addEventListener('click', saysNo);
 yesButton.addEventListener('click', saysYes);
